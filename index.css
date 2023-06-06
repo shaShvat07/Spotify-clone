@@ -11,7 +11,6 @@ aside{
    overflow: hidden;
    position: fixed;
    left: 0%;
-
 }
 header {
    display: inline-block;
@@ -27,10 +26,21 @@ header {
 main{
    display: inline-block;
    vertical-align: top;
-   width:55%;
+   width: 55%;
+   position: relative;
    margin-top: 5%;
    margin-left: 22%;
+}
+
+.recently-played{
    position: relative;
+   width: 100%;
+   margin-left: 20.5%;
+   height: 20rem;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   overflow-x: hidden;
 }
 
 footer{
@@ -50,6 +60,7 @@ section{
    margin-left: -2%;
    position: relative;
    overflow: hidden;
+   /* float: right; */
 }
 
 /* HEADER */
@@ -65,7 +76,7 @@ section{
 .my-profile{
    display: inline-block;
    position: relative;
-   width: 20%;
+   width: 12rem;
    border: 2px solid #181818;
    background-color: #000000;
    border-radius: 10px;
@@ -139,7 +150,7 @@ section{
    z-index: 10;
    width: 32px;
    height: 32px;
-   margin: 0.5rem 0rem 0.5rem 14rem;
+   margin: 0.5rem 0rem 0.5rem 86%;
    background-color: #101010;
    border-radius: 50%;
 }
@@ -226,9 +237,9 @@ section{
    color: white;
 }
 
-
-
-
+.spotifylogo{
+   display: none;
+}
 /* FONT-AWESOME */
 
 
@@ -531,9 +542,9 @@ hr{
 }
 
 .top {
+   position: relative;
    color: white;
    font-size: 20px;
-   margin-top: 0rem;
 }
 
 .trending{
@@ -692,7 +703,7 @@ hr{
    height: 32px;
    background-color: #101010;
    border-radius: 50%;
-   margin-left: 10.7rem;
+   margin-left: 25%;
    margin-top: 1rem;
    
 }
@@ -727,20 +738,12 @@ hr{
 
 /* RECENTLY PLAYED */
 
-.recently-played{
-   position: relative;
-   width: 100%;
-   margin-left: 20.5%;
-   height: 20rem;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-}
+
 
 .song-card{   
    background-color: #181818;
    margin : 20px;
-   width : 16.5%;
+   width : 13rem;
    height: 17rem;
    border-radius: 10px;
    position: relative;
@@ -800,7 +803,7 @@ hr{
    height: 32px;
    background-color: #101010;
    border-radius: 50%;
-   margin-left: 10rem;
+   margin-left: 80%;
    margin-top: -3rem;
 }
 .green-play2 i{
@@ -836,7 +839,7 @@ footer{
    display: flex;
    flex-direction: column;
    flex-wrap: nowrap;
-   width : 5%;
+   width : 3.5rem;
    height: 80%;
    top: 7.5px;
    margin-left: 15px;
@@ -851,7 +854,7 @@ footer{
    position: absolute;
    color: white;
    margin-left: 6rem;
-   top: 22px
+   top: 22px;
 }
 
 .cur-song-artist{
@@ -888,6 +891,9 @@ footer{
    width: 35rem;
    top:60%;
    cursor : pointer;
+}
+.bot-icons2{
+   display: none;
 }
 .bot-icons{
    position: relative;
@@ -936,4 +942,246 @@ footer{
    
 .slider{
    background: #1fdf64;
+}
+
+
+@media screen and (max-width: 1130px) {
+   header{
+      margin-left: 24.96%;
+   }
+   .my-profile{
+      margin-left: 65%;
+   }
+   .top-50{
+      display: none;
+   }
+   aside {
+      width: 25%;
+   }
+   main {
+      width: 73%;
+      margin-left: 27%;
+   }
+
+   .headings {
+      margin-left: 27%;
+   }
+   .recently-played{
+      margin-left: 25%;
+      height: 42rem;
+      overflow: hidden;
+   }
+   .song-card{
+      width : 15rem;
+      height: 19rem;
+   }
+}
+
+
+@media screen and (max-width: 1024px) {
+   header{
+      margin-left: 27.96%;
+   }
+   .my-profile{
+      margin-left: 60%;
+   }
+   .top-50{
+      display: none;
+   }
+   aside {
+      width: 28%;
+   }
+   main {
+      width: 73%;
+      margin-left: 30%;
+   }
+
+   .Quick{
+      height: 18rem;
+   }
+
+   .box{
+      width: 46%;
+      height: 6rem;
+   }
+   .green-play3 {
+      margin-left: 40%;
+      margin-top: 4%;
+   }
+
+   .img-src img{
+      height: 6rem;
+   }
+   .headings {
+      margin-left: 30%;
+   }
+   .recently-played{
+      margin-left: 28%;
+      height: 54rem;
+      overflow: hidden;
+   }
+   .song-card{
+      width : 20rem;
+      height: 24rem;
+   }
+}
+
+@media screen and ( max-width: 880px)
+{
+   aside{
+      display: none;
+   }
+   header{
+      width: 100%;
+      margin-left: 0%;
+   }
+   .headings{
+      text-align: center;
+      width: 100%;
+      margin-left: 0;
+   }
+   .recently-played{
+      margin-left: 5%;
+   }
+   main {
+      margin-left: 5%;
+      width: 93%;
+   }
+   .box{
+      width: 48%;
+      height: 6rem;
+   }
+   .parent{
+      margin-left: 2%;
+   }
+   .green-play3 {
+      margin-left: 40%;
+      margin-top: 4%;
+   }
+   .song-card{
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media screen and ( max-width: 740px)
+{
+   .box{
+      width: 47%;
+      height: 6rem;
+   }
+   .green-play3 {
+      margin-left: 37%;
+      margin-top: 6%;
+   }
+}
+
+@media screen and ( max-width: 400px)
+{
+   main {
+      margin-left: 4%;
+      margin-top: 20%;
+      width: 100%;
+   }
+   .profile{
+      display: none;
+   }
+   .name {
+      display: none;
+   }
+   .my-profile{
+      width: 10.5%;
+      border-radius: 50%;
+      margin-left: 80%;
+   }
+   .my-profile img{
+      padding: auto;
+   }
+   #play-playlist{
+      margin-left: 10%;
+   }
+   .recently-played{
+      overflow-x: scroll;
+      flex-direction: column;
+      height: 28rem;
+   }
+   .Quick{
+      height: 15rem;
+      /* margin-left: 0%; */
+
+   }
+   .box{
+      width: 47.12%;
+      height: 4rem;
+   }
+   .green-play3 {
+      margin-left: 37%;
+      margin-top: 8%;
+   }
+   .img-src img{
+      height: 4rem;
+   }
+   .headings{
+      text-align: center;
+   }
+   .cur-song-name{
+      top:5px;
+      margin-left:20%;
+   }
+   /* .final-name{
+      text-align: center;
+   } */
+   .iconf{
+      top: 10px;
+      margin-left: 78%;
+   }
+   #myProgressBar{
+      margin-left: -17rem; 
+      width: 17.5rem;
+      top: 50px;
+      height: 1px;
+   }
+
+   .song-card{
+      margin-right: 15px;
+   }
+
+   .cur-song-img img{
+      height: 55px;
+      width: 55px;
+      margin-top: 3px;
+   }
+   .cur-song-name{
+      font-size: 12px;
+   }
+   #scroll-text{
+      font-size: 10px;
+   }
+
+   .iconf{
+      margin-top: -4px;
+   }
+   .bot-icons{
+      left: 11.5rem;
+      bottom: -0.9rem;
+   }
+   .finalPlay{
+      font-size: 20px;
+   }
+   #previous{
+      font-size: 20px;
+   }
+   #next{
+      font-size: 20px;
+   }
+
+   .spotifylogo{
+      position: absolute;
+      display: inline-block;
+      top: 10px;
+      left: 10px;
+   }
+   .spotifylogo i {
+      font-size: 40px;
+   }
 }
